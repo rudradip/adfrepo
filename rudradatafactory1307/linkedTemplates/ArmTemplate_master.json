@@ -15,10 +15,6 @@
 			"type": "string",
 			"defaultValue": "https://rudrastorage1.dfs.core.windows.net"
 		},
-		"trigger1_properties_typeProperties_scope": {
-			"type": "string",
-			"defaultValue": "/subscriptions/61bd91e7-b54f-4935-9ef4-ada733f94cd6/resourceGroups/Rudraresoucegroup/providers/Microsoft.Storage/storageAccounts/rudrastorage1"
-		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -51,9 +47,6 @@
 					},
 					"AzureDataLakeStorage1_properties_typeProperties_url": {
 						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
-					},
-					"trigger1_properties_typeProperties_scope": {
-						"value": "[parameters('trigger1_properties_typeProperties_scope')]"
 					}
 				}
 			},
