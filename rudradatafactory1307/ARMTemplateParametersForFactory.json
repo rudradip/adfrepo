@@ -10,6 +10,9 @@
 		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"value": "https://rudrastorage1.dfs.core.windows.net"
+		},
+		"trigger1_properties_typeProperties_scope": {
+			"value": "/subscriptions/61bd91e7-b54f-4935-9ef4-ada733f94cd6/resourceGroups/Rudraresoucegroup/providers/Microsoft.Storage/storageAccounts/rudrastorage1"
 		}
 	}
 }
