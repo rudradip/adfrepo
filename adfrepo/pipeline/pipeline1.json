@@ -1,5 +1,5 @@
 {
-	"name": "rudrapipeline1",
+	"name": "pipeline1",
 	"properties": {
 		"activities": [
 			{
@@ -16,54 +16,34 @@
 				"userProperties": [],
 				"typeProperties": {
 					"source": {
-						"type": "BinarySource",
+						"type": "DelimitedTextSource",
 						"storeSettings": {
 							"type": "AzureBlobFSReadSettings",
 							"recursive": true
+						},
+						"formatSettings": {
+							"type": "DelimitedTextReadSettings"
 						}
 					},
 					"sink": {
-						"type": "BinarySink",
-						"storeSettings": {
-							"type": "AzureBlobFSWriteSettings"
-						}
+						"type": "AzureSqlSink"
 					},
 					"enableStaging": false
 				},
 				"inputs": [
 					{
-						"referenceName": "Binary1",
+						"referenceName": "DelimitedTextNew",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "Binary2",
+						"referenceName": "AzureSqlTable1",
 						"type": "DatasetReference"
 					}
 				]
-			},
-			{
-				"name": "dataflow1",
-				"type": "ExecuteDataFlow",
-				"dependsOn": [],
-				"policy": {
-					"timeout": "7.00:00:00",
-					"retry": 0,
-					"retryIntervalInSeconds": 30,
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"userProperties": [],
-				"typeProperties": {
-					"compute": {
-						"coreCount": 8,
-						"computeType": "General"
-					}
-				}
 			}
 		],
-		"concurrency": 2,
 		"annotations": []
 	}
 }

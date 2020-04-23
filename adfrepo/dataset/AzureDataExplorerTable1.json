@@ -1,0 +1,8 @@
+{
+	"name": "AzureDataExplorerTable1",
+	"properties": {
+		"annotations": [],
+		"type": "AzureDataExplorerTable",
+		"schema": []
+	}
+}
