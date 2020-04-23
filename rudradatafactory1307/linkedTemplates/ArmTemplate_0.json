@@ -51,7 +51,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobFSLocation",
-						"fileName": "*.*",
+						"fileName": "rudr1",
 						"fileSystem": "fraudcalls"
 					}
 				}
