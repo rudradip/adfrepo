@@ -1,0 +1,57 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "extended_data.csv",
+				"folderPath": "filedirectory",
+				"fileSystem": "newcontainer"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "model_year",
+				"type": "String"
+			},
+			{
+				"name": "brand",
+				"type": "String"
+			},
+			{
+				"name": "model",
+				"type": "String"
+			},
+			{
+				"name": "type",
+				"type": "String"
+			},
+			{
+				"name": "miles_per_gallon",
+				"type": "String"
+			},
+			{
+				"name": "premium_version",
+				"type": "String"
+			},
+			{
+				"name": "msrp",
+				"type": "String"
+			},
+			{
+				"name": "collection_car",
+				"type": "String"
+			}
+		]
+	}
+}
